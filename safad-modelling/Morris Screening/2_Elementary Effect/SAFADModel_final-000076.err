@@ -1,0 +1,696 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2019.11.08 14:07,IDD_Version 8.7.0
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=CEBU CITY
+   **   ~~~   ** ..Weather File Location=MACTAN - PHL IWEC2 WMO#=986460
+   **   ~~~   ** ..due to location differences, Latitude difference=[5.00E-002] degrees, Longitude difference=[6.00E-002] degrees.
+   **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[68.00] percent, [51.00] meters.
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF101ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="COOLINGSETPOINTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF102ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Saturday","Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF103ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF104ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF110ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF111ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF101LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF102LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF103LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF104LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY WEDNESDAY THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF110LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF111LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF207LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY THURSDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF208LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF209LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF210LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF212LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF213LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF214LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF215LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF304LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF305LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF306LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF307LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF308LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B03LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B04LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEDNESDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B06LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07CLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07ELIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07FLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB4LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB3LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07DLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF207ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY THURSDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF208ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF209ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF210ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF212ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF213ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF214ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF215ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF304ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF306ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF305ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF307ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF308ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B03ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B04ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B06ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07CACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07DACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07EACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07FACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB4ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB3ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF3B01ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12CACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12CLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12DACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12DLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12EACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12ELIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12FACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12FLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB1ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB1LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB2ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB2LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="SAFADOFFICES_SCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="ASSUMPTIONCLASSROOMOCCUPANCY" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12FOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12COCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12BOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12AOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12EOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12DOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY
+   **   ~~~   ** Missing day types="Sunday","Saturday","Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF101OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF102OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Saturday","Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF103OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF104OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF111OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF110OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109AOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109BOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF210OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF209OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF208OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF207OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF215OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF214OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF213OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEDNESDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF212OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF304OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF306OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF307OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B06OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07AOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07BOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF308OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07COCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07DOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07EOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07FOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF305OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB4OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB3OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF3B02OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF3B01OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "LOCKEDROOMWINDACDXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 2.00 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/01 18:48 - 18:49
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "SERVERROOMWINDACDXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.98 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/01 20:15 - 20:20
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AFCB1WINDAC1DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.94 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:04 - 18:05
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AFCB1WINDAC2DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.94 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:04 - 18:05
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AFCB3WINDAC1DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.99 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:09 - 18:10
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AFCB3WINDAC2DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.99 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:09 - 18:10
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AF101WINDAC1DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.98 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:17 - 18:18
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AF101WINDAC2DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.98 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:17 - 18:18
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AFCB2WINDAC1DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.96 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:41 - 18:42
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AFCB2WINDAC2DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.96 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/04 18:41 - 18:42
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "FILMROOMWINDACDXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.93 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/05 02:30 - 02:40
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.734 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AF103WINDAC1DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.99 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/08 17:29 - 17:30
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "AF103WINDAC2DXCOIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 1.99 C.
+   **   ~~~   **  ...Occurrence info = RUNPERIOD, 04/08 17:29 - 17:30
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.163 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ************* Simulation Error Summary *************
+   ************* There are 2 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="LOCKEDROOMWINDACDXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 2149 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.998169  Min=-9.667946
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="SERVERROOMWINDACDXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 1042 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.999967  Min=-14.138085
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AFCB1WINDAC1DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 241 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.95851  Min=0.892176
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AFCB1WINDAC2DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 241 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.95851  Min=0.892176
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AFCB3WINDAC1DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 231 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.996131  Min=1.16169
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AFCB3WINDAC2DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 231 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.996131  Min=1.16169
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AF101WINDAC1DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 197 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.99902  Min=1.281119
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AF101WINDAC2DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 197 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.99902  Min=1.281119
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AFCB2WINDAC1DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 149 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.98405  Min=1.191387
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AFCB2WINDAC2DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 149 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.98405  Min=1.191387
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="FILMROOMWINDACDXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 997 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.999231  Min=-1.923402
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AF103WINDAC1DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 14 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.986651  Min=1.668791
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="AF103WINDAC2DXCOIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 14 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.986651  Min=1.668791
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 5982 Warning; 0 Severe Errors; Elapsed Time=00hr 03min 24.38sec

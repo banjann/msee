@@ -1,0 +1,156 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2019.11.21 11:12
+! This file shows details about the branches, nodes, and other
+! elements of the flow connections.
+! This file is intended for use in "debugging" potential problems
+! that may also be detected by the program, but may be more easily
+! identified by "eye".
+! This file is also intended to support software which draws a
+! schematic diagram of the HVAC system.
+! ===============================================================
+! #Nodes,<Number of Unique Nodes>
+ #Nodes,14
+! <Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Node,1,AF211WINDAC2AIROUTLETNODE,Air,3
+ Node,2,AF211WINDACAIROUTLETNODE,Air,3
+ Node,3,AF211WINDAC2AIRINLETNODE,Air,3
+ Node,4,AF211WINDACAIRINLETNODE,Air,3
+ Node,5,AF211WINDAC2OAMIXERINNODE,Air,1
+ Node,6,AF211WINDACOAMIXERINNODE,Air,1
+ Node,7,AF211ZONEAIRNODE,Air,0
+ Node,8,AF211ZONERETURNAIRNODE,Air,0
+ Node,9,AF211WINDACOAMIXEROUTLETNODE,Air,1
+ Node,10,AF211WINDACOAMIXEREXHNODE,Air,0
+ Node,11,AF211WINDAC2OAMIXEROUTLETNODE,Air,1
+ Node,12,AF211WINDAC2OAMIXEREXHNODE,Air,0
+ Node,13,AF211WINDACFANOUTLETNODE,Air,1
+ Node,14,AF211WINDAC2FANOUTLETNODE,Air,1
+! ===============================================================
+! Suspicious nodes have 0 references.  It is normal for some nodes, however.
+! Listing nodes with 0 references (culled from previous list):
+! <Suspicious Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Suspicious Node,7,AF211ZONEAIRNODE,Air,0
+ Suspicious Node,8,AF211ZONERETURNAIRNODE,Air,0
+ Suspicious Node,10,AF211WINDACOAMIXEREXHNODE,Air,0
+ Suspicious Node,12,AF211WINDAC2OAMIXEREXHNODE,Air,0
+! ===============================================================
+! <#Branch Lists>,<Number of Branch Lists>
+ #Branch Lists,0
+! <Branch List>,<Branch List Count>,<Branch List Name>,<Loop Name>,<Loop Type>,<Number of Branches>
+! <Branch>,<Branch Count>,<Branch Name>,<Loop Name>,<Loop Type>,<Branch Inlet Node Name>,<Branch Outlet Node Name>
+! ===============================================================
+! <#Supply Air Paths>,<Number of Supply Air Paths>
+ #Supply Air Paths,0
+! <Supply Air Path>,<Supply Air Path Count>,<Supply Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Supply Air Path>,<Number of Components>
+! <Supply Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Outlet Nodes on Supply Air Path Component>,<Number of Nodes>
+! <Supply Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+! ===============================================================
+! <#Return Air Paths>,<Number of Return Air Paths>
+ #Return Air Paths,0
+! <Return Air Path>,<Return Air Path Count>,<Return Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Return Air Path>,<Number of Components>
+! <Return Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Inlet Nodes on Return Air Path Component>,<Number of Nodes>
+! <Return Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+! ===============================================================
+! #Outdoor Air Nodes,<Number of Outdoor Air Nodes>
+ #Outdoor Air Nodes,2
+! <Outdoor Air Node>,<NodeNumber>,<Node Name>
+ Outdoor Air Node,5,AF211WINDAC2OAMIXERINNODE
+ Outdoor Air Node,6,AF211WINDACOAMIXERINNODE
+! ===============================================================
+! <#Component Sets>,<Number of Component Sets>
+ #Component Sets,6
+! <Component Set>,<Component Set Count>,<Parent Object Type>,<Parent Object Name>,<Component Type>,<Component Name>,<Inlet Node ID>,<Outlet Node ID>,<Description>
+ Component Set,1,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC,OUTDOORAIR:MIXER,AF211WINDACOAMIXER,AF211WINDACOAMIXERINNODE,AF211WINDACOAMIXEROUTLETNODE,Air Nodes
+ Component Set,2,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC2,OUTDOORAIR:MIXER,AF211WINDAC2OAMIXER,AF211WINDAC2OAMIXERINNODE,AF211WINDAC2OAMIXEROUTLETNODE,Air Nodes
+ Component Set,3,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC,FAN:ONOFF,AF211WINDACFAN,AF211WINDACOAMIXEROUTLETNODE,AF211WINDACFANOUTLETNODE,Air Nodes
+ Component Set,4,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC2,FAN:ONOFF,AF211WINDAC2FAN,AF211WINDAC2OAMIXEROUTLETNODE,AF211WINDAC2FANOUTLETNODE,Air Nodes
+ Component Set,5,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC,COIL:COOLING:DX:SINGLESPEED,AF211WINDACDXCOIL,AF211WINDACFANOUTLETNODE,AF211WINDACAIROUTLETNODE,Air Nodes
+ Component Set,6,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC2,COIL:COOLING:DX:SINGLESPEED,AF211WINDAC2DXCOIL,AF211WINDAC2FANOUTLETNODE,AF211WINDAC2AIROUTLETNODE,Air Nodes
+! ===============================================================
+! <# Plant Loops>,<Number of Plant Loops>
+ #Plant Loops,0
+! <Plant Loop>,<Plant Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Plant Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Plant Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Plant Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Plant Loop Supply Connection>,<Plant Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Plant Loop Return Connection>,<Plant Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Condenser Loops>,<Number of Condenser Loops>
+ #Condenser Loops,0
+! <Condenser Loop>,<Condenser Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Condenser Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Condenser Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Condenser Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Condenser Loop Supply Connection>,<Condenser Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Condenser Loop Return Connection>,<Condenser Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Controlled Zones>,<Number of Controlled Zones>
+ #Controlled Zones,1
+! <Controlled Zone>,<Controlled Zone Name>,<Equip List Name>,<Control List Name>,<Zone Node Name>,<Return Air Node Name>,<# Inlet Nodes>,<# Exhaust Nodes>
+! <Controlled Zone Inlet>,<Inlet Node Count>,<Controlled Zone Name>,<Supply Air Inlet Node Name>,<SD Sys:Cooling/Heating [DD:Cooling] Inlet Node Name>,<DD Sys:Heating Inlet Node Name>
+! <Controlled Zone Exhaust>,<Exhaust Node Count>,<Controlled Zone Name>,<Exhaust Air Node Name>
+ Controlled Zone,ZONE 1_TEST,AF211EQUIPMENT,,AF211ZONEAIRNODE,AF211ZONERETURNAIRNODE,2,2
+   Controlled Zone Inlet,1,ZONE 1_TEST,AF211WINDAC2AIROUTLETNODE,Undefined,N/A
+   Controlled Zone Inlet,2,ZONE 1_TEST,AF211WINDACAIROUTLETNODE,Undefined,N/A
+   Controlled Zone Exhaust,1,ZONE 1_TEST,AF211WINDAC2AIRINLETNODE
+   Controlled Zone Exhaust,2,ZONE 1_TEST,AF211WINDACAIRINLETNODE
+! ===============================================================
+! <#Zone Equipment Lists>,<Number of Zone Equipment Lists>
+ #Zone Equipment Lists,1
+! <Zone Equipment List>,<Zone Equipment List Count>,<Zone Equipment List Name>,<Zone Name>,<Number of Components>
+! <Zone Equipment Component>,<Component Count>,<Component Type>,<Component Name>,<Zone Name>,<Heating Priority>,<Cooling Priority>
+ Zone Equipment List,1,AF211EQUIPMENT,ZONE 1_TEST,2
+   Zone Equipment Component,1,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC,ZONE 1_TEST,1,1
+   Zone Equipment Component,2,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC2,ZONE 1_TEST,2,2
+! ===============================================================
+! <#AirLoopHVACs>,<Number of AirLoopHVACs>
+ #AirLoopHVACs,0
+! <AirLoopHVAC>,<Air Loop Name>,<# Return Nodes>,<# Supply Nodes>,<# Zones Cooled>,<# Zones Heated>,<Outdoor Air Used>
+! <AirLoop Return Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Return Node #>,<Zn Eqp Return Node Name>,<AirLoop Return Node #>,<Air Loop Return Node Name>
+! <AirLoop Supply Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Supply Node #>,<Zn Eqp Supply Node Name>,<AirLoop Supply Node #>,<Air Loop Supply Node Name>
+! <Cooled Zone Info>,<Cooled Zone Count>,<Cooled Zone Name>,<Cooled Zone Inlet Node #>,<Cooled Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Heated Zone Info>,<Heated Zone Count>,<Heated Zone Name>,<Heated Zone Inlet Node #>,<Heated Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Outdoor Air Connections>,<OA Inlet Node #>,<OA Return Air Inlet Node Name>,<OA Outlet Node #>,<OA Mixed Air Outlet Node Name>,<AirLoopHVAC Name>
+! <AirLoopHVAC Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <AirLoopHVAC Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <AirLoopHVAC Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! ===============================================================
+! <#Parent Node Connections>,<Number of Parent Node Connections>
+ #Parent Node Connections,4
+! <Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Parent Node Connection,AF211WINDACAIRINLETNODE,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC,Inlet,1
+ Parent Node Connection,AF211WINDACAIROUTLETNODE,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC,Outlet,1
+ Parent Node Connection,AF211WINDAC2AIRINLETNODE,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC2,Inlet,1
+ Parent Node Connection,AF211WINDAC2AIROUTLETNODE,ZONEHVAC:WINDOWAIRCONDITIONER,AF211WINDAC2,Outlet,1
+! ===============================================================
+! <#Non-Parent Node Connections>,<Number of Non-Parent Node Connections>
+ #Non-Parent Node Connections,24
+! <Non-Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Non-Parent Node Connection,AF211WINDAC2OAMIXERINNODE,OUTDOORAIR:NODELIST,OutdoorAir:NodeList,OutdoorAir,1
+ Non-Parent Node Connection,AF211WINDACOAMIXERINNODE,OUTDOORAIR:NODELIST,OutdoorAir:NodeList,OutdoorAir,2
+ Non-Parent Node Connection,AF211ZONEAIRNODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ZONE 1_TEST,ZoneNode,1
+ Non-Parent Node Connection,AF211ZONERETURNAIRNODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ZONE 1_TEST,ZoneReturn,1
+ Non-Parent Node Connection,AF211WINDAC2AIROUTLETNODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ZONE 1_TEST,ZoneInlet,1
+ Non-Parent Node Connection,AF211WINDACAIROUTLETNODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ZONE 1_TEST,ZoneInlet,1
+ Non-Parent Node Connection,AF211WINDAC2AIRINLETNODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ZONE 1_TEST,ZoneExhaust,1
+ Non-Parent Node Connection,AF211WINDACAIRINLETNODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ZONE 1_TEST,ZoneExhaust,1
+ Non-Parent Node Connection,AF211WINDACOAMIXEROUTLETNODE,OUTDOORAIR:MIXER,AF211WINDACOAMIXER,Outlet,1
+ Non-Parent Node Connection,AF211WINDACOAMIXERINNODE,OUTDOORAIR:MIXER,AF211WINDACOAMIXER,Inlet,1
+ Non-Parent Node Connection,AF211WINDACOAMIXEREXHNODE,OUTDOORAIR:MIXER,AF211WINDACOAMIXER,ReliefAir,1
+ Non-Parent Node Connection,AF211WINDACAIRINLETNODE,OUTDOORAIR:MIXER,AF211WINDACOAMIXER,Inlet,1
+ Non-Parent Node Connection,AF211WINDAC2OAMIXEROUTLETNODE,OUTDOORAIR:MIXER,AF211WINDAC2OAMIXER,Outlet,1
+ Non-Parent Node Connection,AF211WINDAC2OAMIXERINNODE,OUTDOORAIR:MIXER,AF211WINDAC2OAMIXER,Inlet,1
+ Non-Parent Node Connection,AF211WINDAC2OAMIXEREXHNODE,OUTDOORAIR:MIXER,AF211WINDAC2OAMIXER,ReliefAir,1
+ Non-Parent Node Connection,AF211WINDAC2AIRINLETNODE,OUTDOORAIR:MIXER,AF211WINDAC2OAMIXER,Inlet,1
+ Non-Parent Node Connection,AF211WINDACOAMIXEROUTLETNODE,FAN:ONOFF,AF211WINDACFAN,Inlet,1
+ Non-Parent Node Connection,AF211WINDACFANOUTLETNODE,FAN:ONOFF,AF211WINDACFAN,Outlet,1
+ Non-Parent Node Connection,AF211WINDAC2OAMIXEROUTLETNODE,FAN:ONOFF,AF211WINDAC2FAN,Inlet,1
+ Non-Parent Node Connection,AF211WINDAC2FANOUTLETNODE,FAN:ONOFF,AF211WINDAC2FAN,Outlet,1
+ Non-Parent Node Connection,AF211WINDACFANOUTLETNODE,COIL:COOLING:DX:SINGLESPEED,AF211WINDACDXCOIL,Inlet,1
+ Non-Parent Node Connection,AF211WINDACAIROUTLETNODE,COIL:COOLING:DX:SINGLESPEED,AF211WINDACDXCOIL,Outlet,1
+ Non-Parent Node Connection,AF211WINDAC2FANOUTLETNODE,COIL:COOLING:DX:SINGLESPEED,AF211WINDAC2DXCOIL,Inlet,1
+ Non-Parent Node Connection,AF211WINDAC2AIROUTLETNODE,COIL:COOLING:DX:SINGLESPEED,AF211WINDAC2DXCOIL,Outlet,1

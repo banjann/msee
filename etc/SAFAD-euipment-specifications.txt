@@ -1,0 +1,14 @@
+300 watts pc
+200 watts apple
+60 watts fan
+300 watts projector
+77 watts small ref
+20 watts standby printers
+40 watts TV
+300 watts water dispenser
+40 watts laptop
+
+T5 36 watts
+Pinlight 9watts
+
+ACU Trane SplitType

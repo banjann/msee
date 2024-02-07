@@ -1,0 +1,24 @@
+Program Version,EPDraw, Version 3.0
+   ************* Energy+.idd used=C:\EnergyPlusV8-7-0\Energy+.idd
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF307
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF2B07A
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF2B07B
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone CANTEEN
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF308
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF2B07C
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF2B07D
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF2B07E
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF2B07F
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** The total number of floors, walls, roofs and internal mass surfaces in Zone AF305
+   **   ~~~   ** is < 6. This may cause an inaccurate zone heat balance calculation.
+   ** Warning ** DXFOut: Using triangulate, action=TRIANGULATE 3DFACE
+   ************* EPDraw Completed Successfully-- 11 Warning; 0 Severe Errors

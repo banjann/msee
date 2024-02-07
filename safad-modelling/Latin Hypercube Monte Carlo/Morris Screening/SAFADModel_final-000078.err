@@ -1,0 +1,532 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2019.11.23 18:13,IDD_Version 8.7.0
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=CEBU CITY
+   **   ~~~   ** ..Weather File Location=MACTAN - PHL IWEC2 WMO#=986460
+   **   ~~~   ** ..due to location differences, Latitude difference=[5.00E-002] degrees, Longitude difference=[6.00E-002] degrees.
+   **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[68.00] percent, [51.00] meters.
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF101ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF102ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Saturday","Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF103ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF104ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF110ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF111ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF101LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF102LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF103LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF104LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY WEDNESDAY THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF110LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF111LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF207LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY THURSDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF208LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF209LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF210LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF212LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF213LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF214LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF215LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF304LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF305LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF306LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF307LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF308LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B03LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B04LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEDNESDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B06LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07CLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07ELIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07FLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB4LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB3LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07DLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF207ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY THURSDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF208ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF209ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF210ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF212ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF213ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: MONDAY TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF214ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: THURSDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF215ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF304ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF306ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF305ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF307ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF308ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B03ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B04ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B06ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07CACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07DACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07EACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07FACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB4ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB3ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF3B01ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B10BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12BACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12BLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12CACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12CLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12DACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12DLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEEKENDS
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12AACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12ALIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12EACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12ELIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12FACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12FLIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB1ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB1LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB2ACUSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB2LIGHTEQUIPMENTSCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="SAFADOFFICES_SCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="ASSUMPTIONCLASSROOMOCCUPANCY" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12FOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12COCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12BOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12AOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12EOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF1B12DOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY
+   **   ~~~   ** Missing day types="Sunday","Saturday","Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF101OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF102OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Saturday","Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF103OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF104OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF111OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF110OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109AOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF109BOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF210OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF209OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF208OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF207OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF215OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF214OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF213OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: WEDNESDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF212OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF304OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF306OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF307OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B06OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07AOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07BOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF308OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07COCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07DOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07EOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF2B07FOCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: TUESDAY THURSDAY FRIDAY SATURDAY SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF305OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB4OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AFCB3OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF3B02OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF3B01OCCUPANTS" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: SUNDAY
+   **   ~~~   ** Missing day types="Holiday","SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ************* There are 2 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 129 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 37.70sec

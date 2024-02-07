@@ -1,0 +1,22 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2019.11.21 08:12,IDD_Version 8.7.0
+   ************* IDF Context for following error/warning message:
+   ************* Note -- lines truncated at 300 characters, if necessary...
+   *************   1207   BuildingSurface:Detailed,
+   ************* indicated Name=DE63C5
+   ************* Only last 3 lines before error line shown.....
+   *************   1208     DE63C5,  !- Name
+   *************   1209     Roof,  !- Surface Type
+   *************   1210     ,  !- Construction Name
+   ** Severe  ** IP: IDF line~1210 Error detected in Object=BUILDINGSURFACE:DETAILED, name=DE63C5
+   **   ~~~   ** Field [Construction Name] is required but was blank
+   ** Severe  ** IP: Blank "required" fields found in input
+   ** Severe  ** IP: Out of "range" values and/or blank required fields found in input
+   **  Fatal  ** IP: Errors occurred on processing IDF file. Preceding condition(s) cause termination.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=3
+   ..... Last severe error=IP: Out of "range" values and/or blank required fields found in input
+   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).
+   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 3 Severe Errors; Elapsed Time=00hr 00min  1.98sec

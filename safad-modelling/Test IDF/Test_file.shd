@@ -1,0 +1,97 @@
+Shadowing Combinations
+..Solar Distribution=FullInteriorAndExteriorWithReflectionsFromExteriorSurfaces
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=6C6F8D is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-6C6F8D is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=DF585A is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=Mir-6C6F8D
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-DF585A is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ILLUMAP is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ILLUMAP is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=Mir-6C6F8D
+..Surface=Mir-DF585A
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=AF211_PLYBOARD_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=Mir-6C6F8D
+..Surface=Mir-DF585A
+..Surface=ILLUMAP
+Number of back surfaces=6
+...Surface=6F287D
+...Surface=A26EDF
+...Surface=AF211_PLYBOARD_2
+...Surface=423191
+...Surface=6F5608
+...Surface=DE63C5
+Number of receiving sub surfaces=1
+....Surface=BAC353
+==================================
+Surface=BAC353 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=6F287D is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=6
+...Surface=AF211_PLYBOARD_1
+...Surface=BAC353
+...Surface=AF211_PLYBOARD_2
+...Surface=423191
+...Surface=6F5608
+...Surface=DE63C5
+Number of receiving sub surfaces=1
+....Surface=A26EDF
+==================================
+Surface=A26EDF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=AF211_PLYBOARD_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=423191 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=6F5608 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=DE63C5 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=Mir-6C6F8D
+..Surface=Mir-DF585A
+..Surface=ILLUMAP
+Number of back surfaces=0
+Number of receiving sub surfaces=0

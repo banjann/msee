@@ -1,0 +1,59 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2019.11.21 11:12,IDD_Version 8.7.0
+   ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
+   **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=CEBU CITY
+   **   ~~~   ** ..Weather File Location=MACTAN - PHL IWEC2 WMO#=986460
+   **   ~~~   ** ..due to location differences, Latitude difference=[5.00E-002] degrees, Longitude difference=[6.00E-002] degrees.
+   **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[68.00] percent, [51.00] meters.
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="AF211_OCCUPANCY SCHEDULE" has missing day types in Through=12/31
+   **   ~~~   ** Last "For" field=FOR: HOLIDAY
+   **   ~~~   ** Missing day types="SummerDesignDay","WinterDesignDay","CustomDay1","CustomDay2"
+   **   ~~~   ** Missing day types will have 0.0 as Schedule Values
+   ** Warning ** CalcSurfaceCentroid: 5 Surfaces have the Z coordinate < 0.
+   **   ~~~   ** ...in any calculations, Wind Speed will be 0.0 for these surfaces.
+   **   ~~~   ** ...in any calculations, Outside temperatures will be the outside temperature + 9.750E-003 for these surfaces.
+   **   ~~~   ** ...that is, these surfaces will have conditions as though at ground level.
+   ** Warning ** CheckUsedConstructions: There are 4 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** GetShadowingInput: DetailedSkyDiffuseModeling is chosen but not needed as either the shading transmittance for shading devices does not change throughout the year
+   **   ~~~   **  or MinimalShadowing has been chosen.
+   **   ~~~   ** Simulation should be set to use SimpleSkyDiffuseModeling, but is left at Detailed for simulation.
+   **   ~~~   ** Choose SimpleSkyDiffuseModeling in the ShadowCalculation object to reduce computation time.
+   ** Warning ** Calculation of reflected solar onto surface=AF211_PLYBOARD_1 may be inaccurate
+   **   ~~~   ** because it has one or more vertices below ground level.
+   ** Warning ** Calculation of reflected solar onto surface=BAC353 may be inaccurate
+   **   ~~~   ** because it has one or more vertices below ground level.
+   ** Warning ** Calculation of reflected solar onto surface=6F287D may be inaccurate
+   **   ~~~   ** because it has one or more vertices below ground level.
+   ** Warning ** Calculation of reflected solar onto surface=A26EDF may be inaccurate
+   **   ~~~   ** because it has one or more vertices below ground level.
+   ** Warning ** Calculation of reflected solar onto surface=DE63C5 may be inaccurate
+   **   ~~~   ** because it has one or more vertices below ground level.
+   ** Warning ** No Glare Calculation Daylighting Reference Point Name provided for object named: DAYLIGHTING
+   **   ~~~   ** No glare calculation performed, and the simulation continues.
+   ** Warning ** CheckLightsReplaceable: Zone "ZONE 1_TEST" has Daylighting:Controls.
+   **   ~~~   ** but all of the LIGHTS object in that zone have zero Fraction Replaceable.
+   **   ~~~   ** The daylighting controls will have no effect.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ************* There are 9 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 13 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  8.77sec

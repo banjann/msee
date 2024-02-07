@@ -1,0 +1,1250 @@
+!-Generator IDFEditor 1.49
+!-Option SortedOrder UseSpecialFormat
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: VERSION ===========
+
+Version,8.7;
+
+!-   ===========  ALL OBJECTS IN CLASS: SIMULATIONCONTROL ===========
+
+
+SimulationControl,
+    No,                      !- Do Zone Sizing Calculation
+    No,                      !- Do System Sizing Calculation
+    No,                      !- Do Plant Sizing Calculation
+    Yes,                     !- Run Simulation for Sizing Periods
+    Yes;                     !- Run Simulation for Weather File Run Periods
+
+
+!-   ===========  ALL OBJECTS IN CLASS: BUILDING ===========
+
+Building,
+    SAFAD Building,          !- Name
+    0.0,                     !- North Axis {deg}
+    Suburbs,                 !- Terrain
+    0.04,                    !- Loads Convergence Tolerance Value
+    0.4,                     !- Temperature Convergence Tolerance Value {deltaC}
+    FullInteriorAndExteriorWithReflections,  !- Solar Distribution
+    25,                      !- Maximum Number of Warmup Days
+    6;                       !- Minimum Number of Warmup Days
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SHADOWCALCULATION ===========
+
+ShadowCalculation,
+    AverageOverDaysInFrequency,  !- Calculation Method
+    20,                      !- Calculation Frequency
+    15000,                   !- Maximum Figures in Shadow Overlap Calculations
+    SutherlandHodgman,       !- Polygon Clipping Algorithm
+    DetailedSkyDiffuseModeling;  !- Sky Diffuse Modeling Algorithm
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SURFACECONVECTIONALGORITHM:INSIDE ===========
+
+SurfaceConvectionAlgorithm:Inside,TARP;
+
+!-   ===========  ALL OBJECTS IN CLASS: SURFACECONVECTIONALGORITHM:OUTSIDE ===========
+
+SurfaceConvectionAlgorithm:Outside,DOE-2;
+
+!-   ===========  ALL OBJECTS IN CLASS: HEATBALANCEALGORITHM ===========
+
+HeatBalanceAlgorithm,ConductionTransferFunction;
+
+!-   ===========  ALL OBJECTS IN CLASS: TIMESTEP ===========
+
+Timestep,6;
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:LOCATION ===========
+
+
+Site:Location,
+    Cebu City,               !- Name
+    10.35,                   !- Latitude {deg}
+    123.91,                  !- Longitude {deg}
+    8.0,                     !- Time Zone {hr}
+    75;                      !- Elevation {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: RUNPERIOD ===========
+
+RunPeriod,
+    RunPeriod,               !- Name
+    1,                       !- Begin Month
+    1,                       !- Begin Day of Month
+    1,                       !- End Month
+    31,                      !- End Day of Month
+    SUNDAY,                  !- Day of Week for Start Day
+    No,                      !- Use Weather File Holidays and Special Days
+    Yes,                     !- Use Weather File Daylight Saving Period
+    No,                      !- Apply Weekend Holiday Rule
+    Yes,                     !- Use Weather File Rain Indicators
+    Yes,                     !- Use Weather File Snow Indicators
+    ,                        !- Number of Times Runperiod to be Repeated
+    ,                        !- Increment Day of Week on repeat
+    2019;                    !- Start Year
+
+
+!-   ===========  ALL OBJECTS IN CLASS: RUNPERIODCONTROL:SPECIALDAYS ===========
+
+RunPeriodControl:SpecialDays,
+    New Years Day,           !- Name
+    January 1,               !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Chinese New Year,        !- Name
+    February 5,              !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    EDSA,                    !- Name
+    February 25,             !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    The Day of Valor,        !- Name
+    April 9,                 !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Maundy Thursday,         !- Name
+    April 18,                !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Good Friday,             !- Name
+    April 19,                !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Black Saturday,          !- Name
+    April 20,                !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Easter Sunday,           !- Name
+    April 21,                !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Labor Day,               !- Name
+    May 1,                   !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Eidul-Fitar,             !- Name
+    June 6,                  !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Independence Day,        !- Name
+    June 12,                 !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Eid al-Adha,             !- Name
+    August 12,               !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Ninoy Aquino Day,        !- Name
+    August 21,               !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    National Heroes Day,     !- Name
+    August 26,               !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    All Saints Day,          !- Name
+    November 1,              !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    All Souls Day,           !- Name
+    November 2,              !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Bonifacio Day,           !- Name
+    November 30,             !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Immaculate Conception,   !- Name
+    December 8,              !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Christmas Day,           !- Name
+    December 25,             !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+    Rizal Day,               !- Name
+    December 30,             !- Start Date
+    1,                       !- Duration {days}
+    Holiday;                 !- Special Day Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:GROUNDTEMPERATURE:BUILDINGSURFACE ===========
+
+Site:GroundTemperature:BuildingSurface,18,18,18,18,18,18,18,18,18,18,18,18;
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULETYPELIMITS ===========
+
+
+ScheduleTypeLimits,
+    Any Number;              !- Name
+
+ScheduleTypeLimits,
+    Fraction,                !- Name
+    0.0,                     !- Lower Limit Value
+    1.0,                     !- Upper Limit Value
+    CONTINUOUS;              !- Numeric Type
+
+ScheduleTypeLimits,
+    Temperature,             !- Name
+    -60,                     !- Lower Limit Value
+    200,                     !- Upper Limit Value
+    CONTINUOUS;              !- Numeric Type
+
+ScheduleTypeLimits,
+    On/Off,                  !- Name
+    0,                       !- Lower Limit Value
+    1,                       !- Upper Limit Value
+    DISCRETE;                !- Numeric Type
+
+ScheduleTypeLimits,
+    Control Type,            !- Name
+    0,                       !- Lower Limit Value
+    4,                       !- Upper Limit Value
+    DISCRETE;                !- Numeric Type
+
+ScheduleTypeLimits,
+    Humidity,                !- Name
+    10,                      !- Lower Limit Value
+    90,                      !- Upper Limit Value
+    CONTINUOUS;              !- Numeric Type
+
+ScheduleTypeLimits,
+    Number;                  !- Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Office Occupancy Schedule,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.0,       !- Field 4
+    Until: 07:00, 0.1,       !- Field 6
+    Until: 08:00, 0.2,       !- Field 8
+    Until: 12:00, 0.95,      !- Field 10
+    Until: 13:00, 0.5,       !- Field 12
+    Until: 17:00, 0.95,      !- Field 14
+    Until: 18:00, 0.3,       !- Field 16
+    Until: 20:00, 0.1,       !- Field 18
+    Until: 24:00, 0.05,      !- Field 20
+    For: SummerDesignDay,    !- Field 21
+    Until: 06:00, 0.0,       !- Field 23
+    Until: 22:00, 1.0,       !- Field 25
+    Until: 24:00, 0.05,      !- Field 27
+    For: Saturday,           !- Field 28
+    Until: 06:00, 0.0,       !- Field 30
+    Until: 08:00, 0.1,       !- Field 32
+    Until: 12:00, 0.3,       !- Field 34
+    Until: 17:00, 0.1,       !- Field 36
+    Until: 19:00, 0.0,       !- Field 38
+    Until: 24:00, 0.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.0,       !- Field 46
+    Until: 18:00, 0.0,       !- Field 48
+    Until: 24:00, 0.0;       !- Field 50
+
+Schedule:Compact,
+    Infiltration Schedule,   !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 06:00, 1.0,       !- Field 4
+    Until: 22:00, 0.0,       !- Field 6
+    Until: 24:00, 1.0,       !- Field 8
+    For: Saturday WinterDesignDay,  !- Field 9
+    Until: 06:00, 1.0,       !- Field 11
+    Until: 18:00, 0.0,       !- Field 13
+    Until: 24:00, 1.0,       !- Field 15
+    For: Sunday Holidays AllOtherDays,  !- Field 16
+    Until: 24:00, 1.0;       !- Field 18
+
+Schedule:Compact,
+    Infiltration Half On Schedule,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 06:00, 1.0,       !- Field 4
+    Until: 22:00, 0.5,       !- Field 6
+    Until: 24:00, 1.0,       !- Field 8
+    For: Saturday WinterDesignDay,  !- Field 9
+    Until: 06:00, 1.0,       !- Field 11
+    Until: 18:00, 0.5,       !- Field 13
+    Until: 24:00, 1.0,       !- Field 15
+    For: Sunday Holidays AllOtherDays,  !- Field 16
+    Until: 24:00, 1.0;       !- Field 18
+
+Schedule:Compact,
+    Infiltration Quarter On Schedule,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 06:00, 1.0,       !- Field 4
+    Until: 22:00, 0.25,      !- Field 6
+    Until: 24:00, 1.0,       !- Field 8
+    For: Saturday WinterDesignDay,  !- Field 9
+    Until: 06:00, 1.0,       !- Field 11
+    Until: 18:00, 0.25,      !- Field 13
+    Until: 24:00, 1.0,       !- Field 15
+    For: Sunday Holidays AllOtherDays,  !- Field 16
+    Until: 24:00, 1.0;       !- Field 18
+
+Schedule:Compact,
+    Hours of Operation Schedule,  !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 06:00, 0.0,       !- Field 4
+    Until: 22:00, 1.0,       !- Field 6
+    Until: 24:00, 0.0,       !- Field 8
+    For: Saturday WinterDesignDay,  !- Field 9
+    Until: 06:00, 0.0,       !- Field 11
+    Until: 18:00, 1.0,       !- Field 13
+    Until: 24:00, 0.0,       !- Field 15
+    For: Sunday Holidays AllOtherDays,  !- Field 16
+    Until: 24:00, 0.0;       !- Field 18
+
+Schedule:Compact,
+    AF211_ACU Schedule,      !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 8:00, 0,          !- Field 4
+    Until: 17:00, 1,         !- Field 6
+    Until: 24:00, 0;         !- Field 8
+
+Schedule:Compact,
+    Always Off,              !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 0.0;       !- Field 4
+
+Schedule:Compact,
+    Heating Setpoint Schedule,  !- Name
+    Temperature,             !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 05:00, 15.6,      !- Field 4
+    Until: 19:00, 21.0,      !- Field 6
+    Until: 24:00, 15.6,      !- Field 8
+    For SummerDesignDay,     !- Field 9
+    Until: 24:00, 15.6,      !- Field 11
+    For: Saturday,           !- Field 12
+    Until: 06:00, 15.6,      !- Field 14
+    Until: 17:00, 21.0,      !- Field 16
+    Until: 24:00, 15.6,      !- Field 18
+    For: WinterDesignDay,    !- Field 19
+    Until: 24:00, 21.0,      !- Field 21
+    For: Sunday Holidays AllOtherDays,  !- Field 22
+    Until: 24:00, 15.6;      !- Field 24
+
+Schedule:Compact,
+    Office Activity Schedule,!- Name
+    Any Number,              !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 120.;      !- Field 4
+
+Schedule:Compact,
+    Office Work Eff. Schedule,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 0.0;       !- Field 4
+
+Schedule:Compact,
+    Office Clothing Schedule,!- Name
+    Any Number,              !- Schedule Type Limits Name
+    Through: 04/30,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 1.0,       !- Field 4
+    Through: 09/30,          !- Field 5
+    For: AllDays,            !- Field 6
+    Until: 24:00, 0.5,       !- Field 8
+    Through: 12/31,          !- Field 9
+    For: AllDays,            !- Field 10
+    Until: 24:00, 1.0;       !- Field 12
+
+Schedule:Compact,
+    AF211_Occupancy Schedule,!- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 08:00, 0.0,       !- Field 4
+    Until: 12:00, 1,         !- Field 6
+    Until: 13:00, 0,         !- Field 8
+    Until: 17:00, 1,         !- Field 10
+    Until: 24:00, 0,         !- Field 12
+    For: Saturday,           !- Field 13
+    Until: 8:00, 0,          !- Field 15
+    Until: 12:00, 1,         !- Field 17
+    Until: 24:00, 0,         !- Field 19
+    For: Sunday,             !- Field 20
+    Until: 24:00, 0,         !- Field 22
+    For: Holiday,            !- Field 23
+    Until: 24:00, 0;         !- Field 25
+
+Schedule:Compact,
+    AF211_Cooling Setpoint Schedule,  !- Name
+    Temperature,             !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 8:00, 32,         !- Field 4
+    Until: 17:00, 20,        !- Field 6
+    Until: 24:00, 32;        !- Field 8
+
+Schedule:Compact,
+    Projector_Switching,     !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 8:00, 0,          !- Field 4
+    Until: 17:00, 1,         !- Field 6
+    Until: 24:00, 0;         !- Field 8
+
+Schedule:Compact,
+    AF211_Lights_schedule,   !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 08:00, 0.0,       !- Field 4
+    Until: 17:00, 1,         !- Field 6
+    Until: 24:00, 0;         !- Field 8
+
+Schedule:Compact,
+    AF211_Infiltration,      !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 1;         !- Field 4
+
+Schedule:Compact,
+    AF211_Control Type,      !- Name
+    Any Number,              !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 2;         !- Field 4
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL ===========
+
+Material,
+    F08 Metal surface,       !- Name
+    Smooth,                  !- Roughness
+    0.0008,                  !- Thickness {m}
+    45.28,                   !- Conductivity {W/m-K}
+    7824,                    !- Density {kg/m3}
+    500;                     !- Specific Heat {J/kg-K}
+
+Material,
+    I01 25mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0254,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+Material,
+    I02 50mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0508,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+Material,
+    G01a 19mm gypsum board,  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.16,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090;                    !- Specific Heat {J/kg-K}
+
+Material,
+    M11 100mm lightweight concrete,  !- Name
+    MediumRough,             !- Roughness
+    0.1016,                  !- Thickness {m}
+    0.53,                    !- Conductivity {W/m-K}
+    1280,                    !- Density {kg/m3}
+    840;                     !- Specific Heat {J/kg-K}
+
+Material,
+    F16 Acoustic tile,       !- Name
+    MediumSmooth,            !- Roughness
+    0.0191,                  !- Thickness {m}
+    0.06,                    !- Conductivity {W/m-K}
+    368,                     !- Density {kg/m3}
+    590;                     !- Specific Heat {J/kg-K}
+
+Material,
+    M01 100mm brick,         !- Name
+    MediumRough,             !- Roughness
+    0.1016,                  !- Thickness {m}
+    0.89,                    !- Conductivity {W/m-K}
+    1920,                    !- Density {kg/m3}
+    790;                     !- Specific Heat {J/kg-K}
+
+Material,
+    M15 200mm heavyweight concrete,  !- Name
+    MediumRough,             !- Roughness
+    0.2032,                  !- Thickness {m}
+    1.95,                    !- Conductivity {W/m-K}
+    2240,                    !- Density {kg/m3}
+    900;                     !- Specific Heat {J/kg-K}
+
+Material,
+    M05 200mm concrete block,!- Name
+    MediumRough,             !- Roughness
+    0.2032,                  !- Thickness {m}
+    1.11,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    920;                     !- Specific Heat {J/kg-K}
+
+Material,
+    G05 25mm wood,           !- Name
+    MediumSmooth,            !- Roughness
+    0.0254,                  !- Thickness {m}
+    0.15,                    !- Conductivity {W/m-K}
+    608,                     !- Density {kg/m3}
+    1630;                    !- Specific Heat {J/kg-K}
+
+Material,
+    AF211_Concrete,          !- Name
+    MediumSmooth,            !- Roughness
+    0.25,                    !- Thickness {m}
+    1.33,                    !- Conductivity {W/m-K}
+    2000,                    !- Density {kg/m3}
+    1000;                    !- Specific Heat {J/kg-K}
+
+Material,
+    AF211_Plywood Sheathing, !- Name
+    MediumSmooth,            !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.13,                    !- Conductivity {W/m-K}
+    500,                     !- Density {kg/m3}
+    1600;                    !- Specific Heat {J/kg-K}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL:AIRGAP ===========
+
+Material:AirGap,
+    Air_between_plyboard,    !- Name
+    0.18;                    !- Thermal Resistance {m2-K/W}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WINDOWMATERIAL:GLAZING ===========
+
+WindowMaterial:Glazing,
+    Clear 3mm,               !- Name
+    SpectralAverage,         !- Optical Data Type
+    ,                        !- Window Glass Spectral Data Set Name
+    0.003,                   !- Thickness {m}
+    0.837,                   !- Solar Transmittance at Normal Incidence
+    0.075,                   !- Front Side Solar Reflectance at Normal Incidence
+    0.075,                   !- Back Side Solar Reflectance at Normal Incidence
+    0.7,                     !- Visible Transmittance at Normal Incidence
+    0.081,                   !- Front Side Visible Reflectance at Normal Incidence
+    0.081,                   !- Back Side Visible Reflectance at Normal Incidence
+    0,                       !- Infrared Transmittance at Normal Incidence
+    0.84,                    !- Front Side Infrared Hemispherical Emissivity
+    0.84,                    !- Back Side Infrared Hemispherical Emissivity
+    0.9;                     !- Conductivity {W/m-K}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONSTRUCTION ===========
+
+Construction,
+    Exterior Floor,          !- Name
+    I02 50mm insulation board,  !- Outside Layer
+    M15 200mm heavyweight concrete;  !- Layer 2
+
+Construction,
+    Interior Window,         !- Name
+    Clear 3mm;               !- Outside Layer
+
+Construction,
+    Exterior Door,           !- Name
+    F08 Metal surface,       !- Outside Layer
+    I01 25mm insulation board;  !- Layer 2
+
+Construction,
+    Interior Door,           !- Name
+    G05 25mm wood;           !- Outside Layer
+
+Construction,
+    AF211_ConcreteWall,      !- Name
+    AF211_Concrete;          !- Outside Layer
+
+Construction,
+    AF211_PlyboardWall,      !- Name
+    AF211_Plywood Sheathing, !- Outside Layer
+    Air_between_plyboard,    !- Layer 2
+    AF211_Plywood Sheathing; !- Layer 3
+
+Construction,
+    AF211_Window,            !- Name
+    Clear 3mm;               !- Outside Layer
+
+
+!-   ===========  ALL OBJECTS IN CLASS: GLOBALGEOMETRYRULES ===========
+
+GlobalGeometryRules,
+    UpperLeftCorner,         !- Starting Vertex Position
+    Counterclockwise,        !- Vertex Entry Direction
+    Relative,                !- Coordinate System
+    Relative,                !- Daylighting Reference Point Coordinate System
+    Relative;                !- Rectangular Surface Coordinate System
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONE ===========
+
+Zone,
+    ZONE 1_TEST,             !- Name
+    0.0,                     !- Direction of Relative North {deg}
+    0, 0, 0,                            !- X,Y,Z  {m}
+    1,                       !- Type
+    1,                       !- Multiplier
+    autocalculate,           !- Ceiling Height {m}
+    autocalculate,           !- Volume {m3}
+    autocalculate;           !- Floor Area {m2}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: BUILDINGSURFACE:DETAILED ===========
+
+BuildingSurface:Detailed,
+    6F5608,                  !- Name
+    Floor,                   !- Surface Type
+    AF211_ConcreteWall,      !- Construction Name
+    ZONE 1_TEST,             !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    0.0,                     !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -94.421874078845, -29.735706000000, -7.600000000000,
+                                        !- X,Y,Z  1 {m}
+    -94.421874078844, -42.055705594123, -7.600000000000,
+                                        !- X,Y,Z  2 {m}
+    -101.556874000000, -42.055705594124, -7.600000000000,
+                                        !- X,Y,Z  3 {m}
+    -101.556874000000, -29.735706000000, -7.600000000000;
+                                        !- X,Y,Z  4 {m}
+
+BuildingSurface:Detailed,
+    AF211_plyboard_1,        !- Name
+    Wall,                    !- Surface Type
+    AF211_PlyboardWall,      !- Construction Name
+    ZONE 1_TEST,             !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -94.421874078845, -29.735706000000, -4.360000000000,
+                                        !- X,Y,Z  1 {m}
+    -94.421874078845, -29.735706000000, -7.600000000000,
+                                        !- X,Y,Z  2 {m}
+    -101.556874000000, -29.735706000000, -7.600000000000,
+                                        !- X,Y,Z  3 {m}
+    -101.556874000000, -29.735706000000, -4.360000000000;
+                                        !- X,Y,Z  4 {m}
+
+BuildingSurface:Detailed,
+    6F287D,                  !- Name
+    Wall,                    !- Surface Type
+    AF211_ConcreteWall,      !- Construction Name
+    ZONE 1_TEST,             !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -101.556874000000, -42.055705594124, -4.360000000000,
+                                        !- X,Y,Z  1 {m}
+    -101.556874000000, -42.055705594124, -7.600000000000,
+                                        !- X,Y,Z  2 {m}
+    -94.421874078844, -42.055705594123, -7.600000000000,
+                                        !- X,Y,Z  3 {m}
+    -94.421874078844, -42.055705594123, -4.360000000000;
+                                        !- X,Y,Z  4 {m}
+
+BuildingSurface:Detailed,
+    AF211_plyboard_2,        !- Name
+    Wall,                    !- Surface Type
+    AF211_PlyboardWall,      !- Construction Name
+    ZONE 1_TEST,             !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    0.0,                     !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -101.556874000000, -29.735706000000, -4.360000000000,
+                                        !- X,Y,Z  1 {m}
+    -101.556874000000, -29.735706000000, -7.600000000000,
+                                        !- X,Y,Z  2 {m}
+    -101.556874000000, -42.055705594124, -7.600000000000,
+                                        !- X,Y,Z  3 {m}
+    -101.556874000000, -42.055705594124, -4.360000000000;
+                                        !- X,Y,Z  4 {m}
+
+BuildingSurface:Detailed,
+    423191,                  !- Name
+    Wall,                    !- Surface Type
+    AF211_ConcreteWall,      !- Construction Name
+    ZONE 1_TEST,             !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    0.0,                     !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -94.421874078844, -42.055705594123, -4.360000000000,
+                                        !- X,Y,Z  1 {m}
+    -94.421874078844, -42.055705594123, -7.600000000000,
+                                        !- X,Y,Z  2 {m}
+    -94.421874078845, -29.735706000000, -7.600000000000,
+                                        !- X,Y,Z  3 {m}
+    -94.421874078845, -29.735706000000, -4.360000000000;
+                                        !- X,Y,Z  4 {m}
+
+BuildingSurface:Detailed,
+    DE63C5,                  !- Name
+    Roof,                    !- Surface Type
+    AF211_ConcreteWall,      !- Construction Name
+    ZONE 1_TEST,             !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -101.556874000000, -29.735706000000, -4.360000000000,
+                                        !- X,Y,Z  1 {m}
+    -101.556874000000, -42.055705594124, -4.360000000000,
+                                        !- X,Y,Z  2 {m}
+    -94.421874078844, -42.055705594123, -4.360000000000,
+                                        !- X,Y,Z  3 {m}
+    -94.421874078845, -29.735706000000, -4.360000000000;
+                                        !- X,Y,Z  4 {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: FENESTRATIONSURFACE:DETAILED ===========
+
+FenestrationSurface:Detailed,
+    BAC353,                  !- Name
+    Window,                  !- Surface Type
+    AF211_Window,            !- Construction Name
+    AF211_plyboard_1,        !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    ,                        !- Multiplier
+    4,                       !- Number of Vertices
+    -96.241445065185, -29.735706000000, -4.560000000000,
+                                        !- X,Y,Z  1 {m}
+    -96.241445065185, -29.735706000000, -5.260000000000,
+                                        !- X,Y,Z  2 {m}
+    -100.941445065186, -29.735706000000, -5.260000000000,
+                                        !- X,Y,Z  3 {m}
+    -100.941445065186, -29.735706000000, -4.560000000000;
+                                        !- X,Y,Z  4 {m}
+
+FenestrationSurface:Detailed,
+    A26EDF,                  !- Name
+    Window,                  !- Surface Type
+    AF211_Window,            !- Construction Name
+    6F287D,                  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    ,                        !- Multiplier
+    4,                       !- Number of Vertices
+    -100.840052077294, -42.055705594123, -4.930063157184,
+                                        !- X,Y,Z  1 {m}
+    -100.840052077294, -42.055705594123, -6.240063157184,
+                                        !- X,Y,Z  2 {m}
+    -95.240052077294, -42.055705594123, -6.240063157184,
+                                        !- X,Y,Z  3 {m}
+    -95.240052077294, -42.055705594123, -4.930063157184;
+                                        !- X,Y,Z  4 {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SHADING:BUILDING:DETAILED ===========
+
+Shading:Building:Detailed,
+    6C6F8D,                  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    5.315702910154, -3.056688909774, 1.500000000000,
+                                        !- X,Y,Z  1 {m}
+    5.315702910154, -3.264094932828, 1.500000000000,
+                                        !- X,Y,Z  2 {m}
+    6.279995060662, -3.528935731173, 1.500000000000,
+                                        !- X,Y,Z  3 {m}
+    6.332963220331, -3.336077301072, 1.500000000000;
+                                        !- X,Y,Z  4 {m}
+
+Shading:Building:Detailed,
+    DF585A,                  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    2.660086771289, -11.943898582451, 1.000000000000,
+                                        !- X,Y,Z  1 {m}
+    2.660086771289, -12.645114243544, 1.000000000000,
+                                        !- X,Y,Z  2 {m}
+    2.852674168581, -12.645114243544, 1.000000000000,
+                                        !- X,Y,Z  3 {m}
+    2.852674168581, -11.943898582451, 1.000000000000;
+                                        !- X,Y,Z  4 {m}
+
+Shading:Building:Detailed,
+    IlluMap,                 !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    7.134999921155, 0.000000000000, 0.000000000000,
+                                        !- X,Y,Z  1 {m}
+    7.134999921156, -12.319999594123, 0.000000000000,
+                                        !- X,Y,Z  2 {m}
+    0.000000000000, -12.319999594124, 0.000000000000,
+                                        !- X,Y,Z  3 {m}
+    0.000000000000, 0.000000000000, 0.000000000000;
+                                        !- X,Y,Z  4 {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PEOPLE ===========
+
+People,
+    AF211_people,            !- Name
+    ZONE 1_TEST,             !- Zone or ZoneList Name
+    AF211_Occupancy Schedule,!- Number of People Schedule Name
+    People,                  !- Number of People Calculation Method
+    80,                      !- Number of People
+    ,                        !- People per Zone Floor Area {person/m2}
+    ,                        !- Zone Floor Area per Person {m2/person}
+    0.3,                     !- Fraction Radiant
+    ,                        !- Sensible Heat Fraction
+    Office Activity Schedule,!- Activity Level Schedule Name
+    ,                        !- Carbon Dioxide Generation Rate {m3/s-W}
+    ,                        !- Enable ASHRAE 55 Comfort Warnings
+    ZoneAveraged;            !- Mean Radiant Temperature Calculation Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: LIGHTS ===========
+
+Lights,
+    AF211_Lights,            !- Name
+    ZONE 1_TEST,             !- Zone or ZoneList Name
+    AF211_Lights_schedule,   !- Schedule Name
+    LightingLevel,           !- Design Level Calculation Method
+    72,                      !- Lighting Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Return Air Fraction
+    1,                       !- Fraction Radiant
+    0,                       !- Fraction Visible
+    0,                       !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ELECTRICEQUIPMENT ===========
+
+ElectricEquipment,
+    AF211_Projector Energy Use,  !- Name
+    ZONE 1_TEST,             !- Zone or ZoneList Name
+    Projector_Switching,     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    300,                     !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.5,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    General;                 !- End-Use Subcategory
+
+
+!-   ===========  ALL OBJECTS IN CLASS: DAYLIGHTING:CONTROLS ===========
+
+Daylighting:Controls,
+    Daylighting,             !- Name
+    ZONE 1_TEST,             !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    AF211_Lights_schedule,   !- Availability Schedule Name
+    Continuous,              !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    1,                       !- Number of Stepped Control Steps
+    1,                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    ,                        !- Glare Calculation Daylighting Reference Point Name
+    ,                        !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22,                      !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    ReferencePoint,          !- Daylighting Reference Point 1 Name
+    1,                       !- Fraction of Zone Controlled by Reference Point 1
+    500;                     !- Illuminance Setpoint at Reference Point 1 {lux}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: DAYLIGHTING:REFERENCEPOINT ===========
+
+Daylighting:ReferencePoint,
+    ReferencePoint,          !- Name
+    ZONE 1_TEST,             !- Zone Name
+    -100,                    !- X-Coordinate of Reference Point {m}
+    -40,                     !- Y-Coordinate of Reference Point {m}
+    -5;                      !- Z-Coordinate of Reference Point {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:ILLUMINANCEMAP ===========
+
+Output:IlluminanceMap,
+    IlluminanceMap,          !- Name
+    ZONE 1_TEST,             !- Zone Name
+    -5,                      !- Z height {m}
+    -100,                    !- X Minimum Coordinate {m}
+    -95,                     !- X Maximum Coordinate {m}
+    10,                      !- Number of X Grid Points
+    -41,                     !- Y Minimum Coordinate {m}
+    -30,                     !- Y Maximum Coordinate {m}
+    10;                      !- Number of Y Grid Points
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUTCONTROL:ILLUMINANCEMAP:STYLE ===========
+
+OutputControl:IlluminanceMap:Style,
+    Comma;                   !- Column Separator
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONEINFILTRATION:DESIGNFLOWRATE ===========
+
+ZoneInfiltration:DesignFlowRate,
+    AF211_Infiltration,      !- Name
+    ZONE 1_TEST,             !- Zone or ZoneList Name
+    AF211_Infiltration,      !- Schedule Name
+    AirChanges/Hour,         !- Design Flow Rate Calculation Method
+    ,                        !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    ,                        !- Flow per Exterior Surface Area {m3/s-m2}
+    1,                       !- Air Changes per Hour {1/hr}
+    1,                       !- Constant Term Coefficient
+    ,                        !- Temperature Term Coefficient
+    ,                        !- Velocity Term Coefficient
+    ;                        !- Velocity Squared Term Coefficient
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONECONTROL:THERMOSTAT ===========
+
+ZoneControl:Thermostat,
+    AF211 Setpoint,          !- Name
+    ZONE 1_TEST,             !- Zone or ZoneList Name
+    AF211_Control Type,      !- Control Type Schedule Name
+    ThermostatSetpoint:SingleCooling,  !- Control 1 Object Type
+    Cooling Setpoint;        !- Control 1 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: THERMOSTATSETPOINT:SINGLECOOLING ===========
+
+ThermostatSetpoint:SingleCooling,
+    Cooling Setpoint,        !- Name
+    AF211_Cooling Setpoint Schedule;  !- Setpoint Temperature Schedule Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONEHVAC:WINDOWAIRCONDITIONER ===========
+
+ZoneHVAC:WindowAirConditioner,
+    AF211WindAC,             !- Name
+    AF211_ACU Schedule,      !- Availability Schedule Name
+    0.31,                    !- Maximum Supply Air Flow Rate {m3/s}
+    0,                       !- Maximum Outdoor Air Flow Rate {m3/s}
+    AF211WindACAirInletNode, !- Air Inlet Node Name
+    AF211WindACAirOutletNode,!- Air Outlet Node Name
+    OutdoorAir:Mixer,        !- Outdoor Air Mixer Object Type
+    AF211WindACOAMixer,      !- Outdoor Air Mixer Name
+    Fan:OnOff,               !- Supply Air Fan Object Type
+    AF211WindACFan,          !- Supply Air Fan Name
+    Coil:Cooling:DX:SingleSpeed,  !- Cooling Coil Object Type
+    AF211WindACDXCoil,       !- DX Cooling Coil Name
+    AF211_ACU Schedule,      !- Supply Air Fan Operating Mode Schedule Name
+    BlowThrough,             !- Fan Placement
+    0.001;                   !- Cooling Convergence Tolerance
+
+ZoneHVAC:WindowAirConditioner,
+    AF211WindAC2,            !- Name
+    AF211_ACU Schedule,      !- Availability Schedule Name
+    0.31,                    !- Maximum Supply Air Flow Rate {m3/s}
+    0,                       !- Maximum Outdoor Air Flow Rate {m3/s}
+    AF211WindAC2AirInletNode,!- Air Inlet Node Name
+    AF211WindAC2AirOutletNode,  !- Air Outlet Node Name
+    OutdoorAir:Mixer,        !- Outdoor Air Mixer Object Type
+    AF211WindAC2OAMixer,     !- Outdoor Air Mixer Name
+    Fan:OnOff,               !- Supply Air Fan Object Type
+    AF211WindAC2Fan,         !- Supply Air Fan Name
+    Coil:Cooling:DX:SingleSpeed,  !- Cooling Coil Object Type
+    AF211WindAC2DXCoil,      !- DX Cooling Coil Name
+    AF211_ACU Schedule,      !- Supply Air Fan Operating Mode Schedule Name
+    BlowThrough,             !- Fan Placement
+    1;                       !- Cooling Convergence Tolerance
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONEHVAC:EQUIPMENTLIST ===========
+
+ZoneHVAC:EquipmentList,
+    AF211Equipment,          !- Name
+    ZoneHVAC:WindowAirConditioner,  !- Zone Equipment 1 Object Type
+    AF211WindAC,             !- Zone Equipment 1 Name
+    1,                       !- Zone Equipment 1 Cooling Sequence
+    1,                       !- Zone Equipment 1 Heating or No-Load Sequence
+    ZoneHVAC:WindowAirConditioner,  !- Zone Equipment 2 Object Type
+    AF211WindAC2,            !- Zone Equipment 2 Name
+    2,                       !- Zone Equipment 2 Cooling Sequence
+    2;                       !- Zone Equipment 2 Heating or No-Load Sequence
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONEHVAC:EQUIPMENTCONNECTIONS ===========
+
+ZoneHVAC:EquipmentConnections,
+    ZONE 1_TEST,             !- Zone Name
+    AF211Equipment,          !- Zone Conditioning Equipment List Name
+    AF211AirInlets,          !- Zone Air Inlet Node or NodeList Name
+    AF211AirOutlets,         !- Zone Air Exhaust Node or NodeList Name
+    AF211ZoneAirNode,        !- Zone Air Node Name
+    AF211ZoneReturnAirNode;  !- Zone Return Air Node Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: FAN:ONOFF ===========
+
+Fan:OnOff,
+    AF211WindACFan,          !- Name
+    AF211_ACU Schedule,      !- Availability Schedule Name
+    0.6,                     !- Fan Total Efficiency
+    75,                      !- Pressure Rise {Pa}
+    0.31,                    !- Maximum Flow Rate {m3/s}
+    0.8,                     !- Motor Efficiency
+    1,                       !- Motor In Airstream Fraction
+    AF211WindACOAMixerOutletNode,  !- Air Inlet Node Name
+    AF211WindACFanOutletNode;!- Air Outlet Node Name
+
+Fan:OnOff,
+    AF211WindAC2Fan,         !- Name
+    AF211_ACU Schedule,      !- Availability Schedule Name
+    0.6,                     !- Fan Total Efficiency
+    75,                      !- Pressure Rise {Pa}
+    0.31,                    !- Maximum Flow Rate {m3/s}
+    0.8,                     !- Motor Efficiency
+    1,                       !- Motor In Airstream Fraction
+    AF211WindAC2OAMixerOutletNode,  !- Air Inlet Node Name
+    AF211WindAC2FanOutletNode;  !- Air Outlet Node Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: COIL:COOLING:DX:SINGLESPEED ===========
+
+Coil:Cooling:DX:SingleSpeed,
+    AF211WindACDXCoil,       !- Name
+    AF211_ACU Schedule,      !- Availability Schedule Name
+    6476,                    !- Gross Rated Total Cooling Capacity {W}
+    0.75,                    !- Gross Rated Sensible Heat Ratio
+    3,                       !- Gross Rated Cooling COP {W/W}
+    0.31,                    !- Rated Air Flow Rate {m3/s}
+    1000,                    !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    AF211WindACFanOutletNode,!- Air Inlet Node Name
+    AF211WindACAirOutletNode,!- Air Outlet Node Name
+    WindACCoolCapFT,         !- Total Cooling Capacity Function of Temperature Curve Name
+    WindACCoolCapFFF,        !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    WindACEIRFT,             !- Energy Input Ratio Function of Temperature Curve Name
+    WindACEIRFFF,            !- Energy Input Ratio Function of Flow Fraction Curve Name
+    WindACPLFFPLR;           !- Part Load Fraction Correlation Curve Name
+
+Coil:Cooling:DX:SingleSpeed,
+    AF211WindAC2DXCoil,      !- Name
+    AF211_ACU Schedule,      !- Availability Schedule Name
+    6476,                    !- Gross Rated Total Cooling Capacity {W}
+    0.75,                    !- Gross Rated Sensible Heat Ratio
+    3,                       !- Gross Rated Cooling COP {W/W}
+    0.31,                    !- Rated Air Flow Rate {m3/s}
+    1000,                    !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    AF211WindAC2FanOutletNode,  !- Air Inlet Node Name
+    AF211WindAC2AirOutletNode,  !- Air Outlet Node Name
+    WindACCoolCapFT,         !- Total Cooling Capacity Function of Temperature Curve Name
+    WindACCoolCapFFF,        !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    WindACEIRFT,             !- Energy Input Ratio Function of Temperature Curve Name
+    WindACEIRFFF,            !- Energy Input Ratio Function of Flow Fraction Curve Name
+    WindACPLFFPLR;           !- Part Load Fraction Correlation Curve Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTDOORAIR:MIXER ===========
+
+OutdoorAir:Mixer,
+    AF211WindACOAMixer,      !- Name
+    AF211WindACOAMixerOutletNode,  !- Mixed Air Node Name
+    AF211WindACOAMixerInNode,!- Outdoor Air Stream Node Name
+    AF211WindACOAMixerExhNode,  !- Relief Air Stream Node Name
+    AF211WindACAirInletNode; !- Return Air Stream Node Name
+
+OutdoorAir:Mixer,
+    AF211WindAC2OAMixer,     !- Name
+    AF211WindAC2OAMixerOutletNode,  !- Mixed Air Node Name
+    AF211WindAC2OAMixerInNode,  !- Outdoor Air Stream Node Name
+    AF211WindAC2OAMixerExhNode,  !- Relief Air Stream Node Name
+    AF211WindAC2AirInletNode;!- Return Air Stream Node Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: NODELIST ===========
+
+NodeList,
+    AF211AirInlets,          !- Name
+    AF211WindAC2AirOutletNode,  !- Node 1 Name
+    AF211WindACAirOutletNode;!- Node 2 Name
+
+NodeList,
+    AF211AirOutlets,         !- Name
+    AF211WindAC2AirInletNode,!- Node 1 Name
+    AF211WindACAirInletNode; !- Node 2 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTDOORAIR:NODELIST ===========
+
+OutdoorAir:NodeList,
+    AF211WindAC2OAMixerInNode,  !- Node or NodeList Name 1
+    AF211WindACOAMixerInNode;!- Node or NodeList Name 2
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:QUADRATIC ===========
+
+Curve:Quadratic,
+    WindACCoolCapFFF,        !- Name
+    0.8,                     !- Coefficient1 Constant
+    0.2,                     !- Coefficient2 x
+    0,                       !- Coefficient3 x**2
+    0.5,                     !- Minimum Value of x
+    1.5;                     !- Maximum Value of x
+
+Curve:Quadratic,
+    WindACEIRFFF,            !- Name
+    1.1552,                  !- Coefficient1 Constant
+    -.1808,                  !- Coefficient2 x
+    0.0256,                  !- Coefficient3 x**2
+    0.5,                     !- Minimum Value of x
+    1.5;                     !- Maximum Value of x
+
+Curve:Quadratic,
+    WindACPLFFPLR,           !- Name
+    0.85,                    !- Coefficient1 Constant
+    0.15,                    !- Coefficient2 x
+    0,                       !- Coefficient3 x**2
+    0,                       !- Minimum Value of x
+    1;                       !- Maximum Value of x
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:BIQUADRATIC ===========
+
+Curve:Biquadratic,
+    WindACCoolCapFT,         !- Name
+    0.942587793,             !- Coefficient1 Constant
+    0.009543347,             !- Coefficient2 x
+    0.00068377,              !- Coefficient3 x**2
+    -.011042676,             !- Coefficient4 y
+    0.000005249,             !- Coefficient5 y**2
+    -.00000972,              !- Coefficient6 x*y
+    12.77778,                !- Minimum Value of x
+    23.88889,                !- Maximum Value of x
+    18,                      !- Minimum Value of y
+    46.11111,                !- Maximum Value of y
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Temperature,             !- Input Unit Type for Y
+    Dimensionless;           !- Output Unit Type
+
+Curve:Biquadratic,
+    WindACEIRFT,             !- Name
+    0.342414409,             !- Coefficient1 Constant
+    0.034885008,             !- Coefficient2 x
+    -.0006237,               !- Coefficient3 x**2
+    0.004977216,             !- Coefficient4 y
+    0.000437951,             !- Coefficient5 y**2
+    -.000728028,             !- Coefficient6 x*y
+    12.77778,                !- Minimum Value of x
+    23.88889,                !- Maximum Value of x
+    18,                      !- Minimum Value of y
+    46.11111,                !- Maximum Value of y
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Temperature,             !- Input Unit Type for Y
+    Dimensionless;           !- Output Unit Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLEDICTIONARY ===========
+
+Output:VariableDictionary,regular;
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:SUMMARYREPORTS ===========
+
+
+Output:Table:SummaryReports,
+    AnnualBuildingUtilityPerformanceSummary;  !- Report 1 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUTCONTROL:TABLE:STYLE ===========
+
+OutputControl:Table:Style,
+    HTML,                    !- Column Separator
+    JtoKWH;                  !- Unit Conversion
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,*,Site Outdoor Air Wetbulb Temperature ,Hourly;
+Output:Variable,*,Site Outdoor Air Dewpoint Temperature ,Hourly;
